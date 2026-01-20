@@ -1,2 +1,2 @@
 # Emotion-based-music
-Find the datatset here - https://www.kaggle.com/datasets/msambare/fer2013
+Dataset used for training the CNN model - https://www.kaggle.com/datasets/msambare/fer2013
