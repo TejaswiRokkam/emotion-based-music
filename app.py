@@ -1,6 +1,7 @@
 import streamlit as st
 import sqlite3
 import mediapipe as mp
+import cv2
 import numpy as np
 import pandas as pd
 import urllib.parse
@@ -290,4 +291,5 @@ else:
                             (st.session_state.user, row.track_name, current_emotion, datetime.now())
                         )
                         conn.commit()
+
 
