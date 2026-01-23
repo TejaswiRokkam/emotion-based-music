@@ -1,6 +1,8 @@
 numpy==1.24.3
 tensorflow==2.13.0
-mediapipe==0.10.9
+mediapipe==0.10.7
+opencv-contrib-python==4.8.1.78
 streamlit
 pillow
 scikit-learn
+pandas
