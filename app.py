@@ -1,3 +1,9 @@
+import os
+
+# Force headless mode (fixes libGL.so.1 error on Streamlit Cloud)
+os.environ["MPLBACKEND"] = "Agg"
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
+
 import streamlit as st
 import sqlite3
 import mediapipe as mp
@@ -291,5 +297,6 @@ else:
                             (st.session_state.user, row.track_name, current_emotion, datetime.now())
                         )
                         conn.commit()
+
 
 
